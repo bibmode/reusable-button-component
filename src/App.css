@@ -9,9 +9,9 @@
   --bgPrimaryFocus: #0039cb;
 
   --textDark: #333333;
-  --textWhite: #ffffff;
+  --textPrimary: #ffffff;
   --textLight: #828282;
-  --textBlue: #3d5afe;
+  --text: #3d5afe;
   --textDefault: #3f3f3f;
 
   --shadowDefault: 0px 2px 3px rgba(51, 51, 51, 0.2);

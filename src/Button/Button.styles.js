@@ -25,7 +25,7 @@ export const Wrapper = styled.button`
   cursor: pointer;
 
   color: ${(props) =>
-    props.variant === "Default" ? "var(--textDefault)" : "var(--textBlue)"};
+    props.variant ? `var(--text${props.variant})` : `var(--text)`};
 
   :hover,
   :focus {

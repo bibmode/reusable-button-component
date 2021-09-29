@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Wrapper } from "./Button.styles";
 
-const Button = ({ variant, focus, color: colorTheme, disableShadow }) => {
+const Button = ({ variant, focus, color, disableShadow }) => {
   const [type, setType] = useState("Default");
   const [themeColor, setThemeColor] = useState("Default");
 
@@ -11,19 +11,15 @@ const Button = ({ variant, focus, color: colorTheme, disableShadow }) => {
       setType(str);
     }
 
-    if (colorTheme) {
-      const str2 = colorTheme.charAt(0).toUpperCase() + colorTheme.slice(1);
-      setThemeColor(str2);
+    if (color) {
+      const str2 = color.charAt(0).toUpperCase() + color.slice(1);
+      //console.log(str2);
+      setType(str2);
     }
-  }, [variant, colorTheme]);
+  }, [variant, color]);
 
   return (
-    <Wrapper
-      focus={focus}
-      variant={type}
-      color={themeColor}
-      disableShadow={disableShadow}
-    >
+    <Wrapper focus={focus} variant={type} disableShadow={disableShadow}>
       Default
     </Wrapper>
   );

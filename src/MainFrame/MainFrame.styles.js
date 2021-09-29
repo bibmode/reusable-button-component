@@ -21,6 +21,7 @@ export const Buttons = styled.div`
 
 export const ButtonContainer = styled.div`
   margin: 2.8rem 6.8rem 0 0;
+  color: var(--text);
 
   h3 {
     font-size: 1.2rem;
