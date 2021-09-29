@@ -15,11 +15,21 @@ export const Wrapper = styled.div`
 `;
 
 export const Buttons = styled.div`
-  margin-top: 2.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+`;
+
+export const ButtonContainer = styled.div`
+  margin: 2.8rem 6.8rem 0 0;
 
   h3 {
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 1.2rem;
+    color: var(--textDark);
+  }
+
+  .hoverText {
+    color: var(--textLight);
   }
 `;

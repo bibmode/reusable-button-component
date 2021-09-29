@@ -1,3 +1,17 @@
+:root {
+  --bgDefault: #e0e0e0;
+  --bgDefaultFocus: #aeaeae;
+  --bgOutline: transparent;
+  --bgOutlineFocus: rgba(41, 98, 255, 0.102);
+  --bgText: transparent;
+  --bgTextFocus: rgba(41, 98, 255, 0.102);
+
+  --textDark: #333333;
+  --textLight: #828282;
+  --textBlue: #3d5afe;
+  --textDefault: #3f3f3f;
+}
+
 .App {
   text-align: center;
   display: flex;
