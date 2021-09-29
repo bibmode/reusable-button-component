@@ -33,6 +33,10 @@ const MainFrame = () => {
           <Button variant="text" focus={true} disableShadow />
         </ButtonContainer>
       </Buttons>
+      <ButtonContainer>
+        <h3>{"<Button disableShadow />"}</h3>
+        <Button color="primary" disableShadow />
+      </ButtonContainer>
     </Wrapper>
   );
 };

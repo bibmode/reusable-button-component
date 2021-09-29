@@ -5,8 +5,11 @@
   --bgOutlineFocus: rgba(41, 98, 255, 0.102);
   --bgText: transparent;
   --bgTextFocus: rgba(41, 98, 255, 0.102);
+  --bgPrimary: #2962ff;
+  --bgPrimaryFocus: #0039cb;
 
   --textDark: #333333;
+  --textWhite: #ffffff;
   --textLight: #828282;
   --textBlue: #3d5afe;
   --textDefault: #3f3f3f;
