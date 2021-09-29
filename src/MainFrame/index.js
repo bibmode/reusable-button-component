@@ -17,20 +17,20 @@ const MainFrame = () => {
 
         <ButtonContainer>
           <h3>{"<Button variant='outline' />"}</h3>
-          <Button variant="outline" />
+          <Button variant="outline" disableShadow />
         </ButtonContainer>
         <ButtonContainer>
           <h3 className="hoverText">&:hover, &:focus</h3>
-          <Button variant="outline" focus={true} />
+          <Button variant="outline" focus={true} disableShadow />
         </ButtonContainer>
 
         <ButtonContainer>
           <h3>{"<Button variant='text' />"}</h3>
-          <Button variant="text" />
+          <Button variant="text" disableShadow />
         </ButtonContainer>
         <ButtonContainer>
           <h3 className="hoverText">&:hover, &:focus</h3>
-          <Button variant="text" focus={true} />
+          <Button variant="text" focus={true} disableShadow />
         </ButtonContainer>
       </Buttons>
     </Wrapper>

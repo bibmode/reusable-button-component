@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Wrapper } from "./Button.styles";
 
-const Button = ({ variant, focus }) => {
+const Button = ({ variant, focus, disableShadow }) => {
   const [type, setType] = useState("Default");
 
   useEffect(() => {
@@ -12,7 +12,7 @@ const Button = ({ variant, focus }) => {
   }, [variant]);
 
   return (
-    <Wrapper focus={focus} variant={type}>
+    <Wrapper focus={focus} variant={type} disableShadow={disableShadow}>
       Default
     </Wrapper>
   );

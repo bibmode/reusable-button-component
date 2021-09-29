@@ -9,7 +9,7 @@ export const Wrapper = styled.button`
       : `var(--bg${props.variant})`};
 
   box-shadow: ${(props) =>
-    props.focus && props.variant === "Default"
+    props.focus && props.variant && !props.disableShadow
       ? "0px 2px 3px rgba(51, 51, 51, 0.2)"
       : "none"};
 
@@ -29,7 +29,10 @@ export const Wrapper = styled.button`
 
   :hover,
   :focus {
-    background-color: #aeaeae;
-    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+    background-color: ${(props) => `var(--bg${props.variant}Focus)`};
+    box-shadow: ${(props) =>
+      props.variant && !props.disableShadow
+        ? `var(--shadow${props.variant})`
+        : "none"};
   }
 `;
