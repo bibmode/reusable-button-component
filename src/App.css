@@ -17,6 +17,10 @@
 
   --shadowDefault: 0px 2px 3px rgba(51, 51, 51, 0.2);
   --shadowBlue: 0px 2px 3px rgba(0, 49, 202, 0.2);
+
+  --mdPadding: 0.8rem 1.6rem;
+  --smPadding: 0.6rem 1.2rem;
+  --lgPadding: 1.1rem 2.2rem;
 }
 
 .App {

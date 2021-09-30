@@ -1,5 +1,10 @@
 import Button from "../Button";
-import { ButtonContainer, Buttons, Wrapper } from "./MainFrame.styles";
+import {
+  ButtonContainer,
+  Buttons,
+  ButtonsThreeCols,
+  Wrapper,
+} from "./MainFrame.styles";
 
 const MainFrame = () => {
   return (
@@ -33,10 +38,12 @@ const MainFrame = () => {
           <Button variant="text" focus={true} disableShadow />
         </ButtonContainer>
       </Buttons>
+
       <ButtonContainer>
         <h3>{"<Button disableShadow />"}</h3>
         <Button color="primary" disableShadow />
       </ButtonContainer>
+
       <Buttons>
         <ButtonContainer>
           <h3>{"<Button disabled />"}</h3>
@@ -47,6 +54,7 @@ const MainFrame = () => {
           <Button variant="text" disabled />
         </ButtonContainer>
       </Buttons>
+
       <Buttons>
         <ButtonContainer>
           <h3>{"<Button startIcon=”local_grocery_store” />"}</h3>
@@ -57,6 +65,21 @@ const MainFrame = () => {
           <Button color="primary" endIcon="local_grocery_store" />
         </ButtonContainer>
       </Buttons>
+
+      <ButtonsThreeCols>
+        <ButtonContainer>
+          <h3>{"<Button size=”sm” />"}</h3>
+          <Button variant="primary" size="sm" />
+        </ButtonContainer>
+        <ButtonContainer>
+          <h3>{"<Button size=”md” />"}</h3>
+          <Button variant="primary" size="md" />
+        </ButtonContainer>
+        <ButtonContainer>
+          <h3>{"<Button size=”lg” />"}</h3>
+          <Button variant="primary" size="lg" />
+        </ButtonContainer>
+      </ButtonsThreeCols>
     </Wrapper>
   );
 };

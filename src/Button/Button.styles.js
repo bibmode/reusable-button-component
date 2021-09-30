@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.button`
-  padding: 0.8rem 1.6rem;
+  padding: ${(props) => `var(--${props.size}Padding)`};
   display: ${(props) => (props.startIcon || props.endIcon ? "grid" : "flex")};
   grid-template-columns: repeat(2, min-content);
   grid-template-rows: 1fr;

@@ -19,6 +19,11 @@ export const Buttons = styled.div`
   grid-template-columns: repeat(2, max-content);
 `;
 
+export const ButtonsThreeCols = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+`;
+
 export const ButtonContainer = styled.div`
   margin: 2.8rem 6.8rem 0 0;
   color: var(--text);

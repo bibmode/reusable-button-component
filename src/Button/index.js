@@ -9,9 +9,11 @@ const Button = ({
   disabled,
   endIcon,
   startIcon,
+  size,
 }) => {
   const [type, setType] = useState("Default");
   const [disable, setDisable] = useState(null);
+  const [sizeVariety, setSizeVariety] = useState("md");
 
   useEffect(() => {
     if (variant) {
@@ -28,7 +30,11 @@ const Button = ({
     if (disabled) {
       setDisable("Disabled");
     }
-  }, [variant, color, disabled]);
+
+    if (size) {
+      setSizeVariety(size);
+    }
+  }, [variant, color, disabled, size]);
 
   return (
     <Wrapper
@@ -38,9 +44,9 @@ const Button = ({
       disabled={disable}
       endIcon={endIcon}
       startIcon={startIcon}
+      size={sizeVariety}
     >
-      <span className="material-icons">{startIcon}</span>
-      Default
+      <span className="material-icons">{startIcon}</span> Default{" "}
       <span className="material-icons">{endIcon}</span>
     </Wrapper>
   );
