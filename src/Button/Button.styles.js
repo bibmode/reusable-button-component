@@ -2,6 +2,19 @@ import styled from "styled-components";
 
 export const Wrapper = styled.button`
   padding: 0.8rem 1.6rem;
+  display: ${(props) => (props.startIcon || props.endIcon ? "grid" : "flex")};
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: 1fr;
+  grid-column-gap: ${(props) => {
+    let gap;
+    if (props.startIcon || props.endIcon) {
+      if (props.startIcon) gap = "1rem";
+      if (props.endIcon) gap = "0.5rem";
+    } else gap = "0";
+    return gap;
+  }};
+
+  align-items: center;
 
   background: ${(props) =>
     props.focus
@@ -40,5 +53,12 @@ export const Wrapper = styled.button`
       props.variant && !props.disableShadow && !props.disabled
         ? `var(--shadow${props.variant})`
         : "none"};
+  }
+
+  span {
+    font-size: inherit;
+    /* margin-right: ${(props) => (props.startIcon ? "1rem" : "0")};
+    margin-left: ${(props) => (props.endIcon ? "1rem" : "0")}; */
+    grid-column: ${(props) => (props.startIcon ? "1" : "-1")};
   }
 `;

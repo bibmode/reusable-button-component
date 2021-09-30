@@ -16,7 +16,7 @@ const MainFrame = () => {
         </ButtonContainer>
 
         <ButtonContainer>
-          <h3>{"<Button variant='outline' />"}</h3>
+          <h3>{"<Button variant=”outline” />"}</h3>
           <Button variant="outline" disableShadow />
         </ButtonContainer>
         <ButtonContainer>
@@ -25,7 +25,7 @@ const MainFrame = () => {
         </ButtonContainer>
 
         <ButtonContainer>
-          <h3>{"<Button variant='text' />"}</h3>
+          <h3>{"<Button variant=”text” />"}</h3>
           <Button variant="text" disableShadow />
         </ButtonContainer>
         <ButtonContainer>
@@ -45,6 +45,16 @@ const MainFrame = () => {
         <ButtonContainer>
           <h3>{"<Button disabled />"}</h3>
           <Button variant="text" disabled />
+        </ButtonContainer>
+      </Buttons>
+      <Buttons>
+        <ButtonContainer>
+          <h3>{"<Button startIcon=”local_grocery_store” />"}</h3>
+          <Button color="primary" startIcon="local_grocery_store" />
+        </ButtonContainer>
+        <ButtonContainer>
+          <h3>{"<Button endIcon=”local_grocery_store” />"}</h3>
+          <Button color="primary" endIcon="local_grocery_store" />
         </ButtonContainer>
       </Buttons>
     </Wrapper>

@@ -1,7 +1,15 @@
 import { useEffect, useState } from "react";
 import { Wrapper } from "./Button.styles";
 
-const Button = ({ variant, focus, color, disableShadow, disabled }) => {
+const Button = ({
+  variant,
+  focus,
+  color,
+  disableShadow,
+  disabled,
+  endIcon,
+  startIcon,
+}) => {
   const [type, setType] = useState("Default");
   const [disable, setDisable] = useState(null);
 
@@ -28,8 +36,12 @@ const Button = ({ variant, focus, color, disableShadow, disabled }) => {
       variant={type}
       disableShadow={disableShadow}
       disabled={disable}
+      endIcon={endIcon}
+      startIcon={startIcon}
     >
+      <span className="material-icons">{startIcon}</span>
       Default
+      <span className="material-icons">{endIcon}</span>
     </Wrapper>
   );
 };
