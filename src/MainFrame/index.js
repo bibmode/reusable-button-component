@@ -37,6 +37,16 @@ const MainFrame = () => {
         <h3>{"<Button disableShadow />"}</h3>
         <Button color="primary" disableShadow />
       </ButtonContainer>
+      <Buttons>
+        <ButtonContainer>
+          <h3>{"<Button disabled />"}</h3>
+          <Button disabled />
+        </ButtonContainer>
+        <ButtonContainer>
+          <h3>{"<Button disabled />"}</h3>
+          <Button variant="text" disabled />
+        </ButtonContainer>
+      </Buttons>
     </Wrapper>
   );
 };

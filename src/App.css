@@ -1,18 +1,19 @@
 :root {
-  --bgDefault: #e0e0e0;
-  --bgDefaultFocus: #aeaeae;
+  --bgDefault: rgb(224, 224, 224);
+  --bgDefaultFocus: rgb(174, 174, 174);
   --bgOutline: transparent;
   --bgOutlineFocus: rgba(41, 98, 255, 0.102);
   --bgText: transparent;
   --bgTextFocus: rgba(41, 98, 255, 0.102);
-  --bgPrimary: #2962ff;
-  --bgPrimaryFocus: #0039cb;
+  --bgPrimary: rgb(41, 98, 255);
+  --bgPrimaryFocus: rgb(0, 57, 203);
 
-  --textDark: #333333;
-  --textPrimary: #ffffff;
-  --textLight: #828282;
-  --text: #3d5afe;
-  --textDefault: #3f3f3f;
+  --textDark: rgb(51, 51, 51);
+  --textPrimary: rgb(255, 255, 255);
+  --textLight: hsl(0, 0%, 51%);
+  --text: rgb(61, 90, 254);
+  --textDefault: rgb(63, 63, 63);
+  --textDisabled: rgb(158, 158, 158);
 
   --shadowDefault: 0px 2px 3px rgba(51, 51, 51, 0.2);
   --shadowBlue: 0px 2px 3px rgba(0, 49, 202, 0.2);

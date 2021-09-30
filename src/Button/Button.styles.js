@@ -22,16 +22,22 @@ export const Wrapper = styled.button`
   font-size: 1.4rem;
   font-weight: 500;
   font-family: inherit;
-  cursor: pointer;
+  cursor: ${(props) => (props.disabled ? "auto" : "pointer")};
 
   color: ${(props) =>
-    props.variant ? `var(--text${props.variant})` : `var(--text)`};
+    props.variant || props.disabled
+      ? `var(--text${props.disabled || props.variant})`
+      : `var(--text)`};
 
   :hover,
   :focus {
-    background-color: ${(props) => `var(--bg${props.variant}Focus)`};
+    background-color: ${(props) =>
+      props.disabled
+        ? `var(--bg${props.variant})`
+        : `var(--bg${props.variant}Focus)`};
+
     box-shadow: ${(props) =>
-      props.variant && !props.disableShadow
+      props.variant && !props.disableShadow && !props.disabled
         ? `var(--shadow${props.variant})`
         : "none"};
   }

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Wrapper } from "./Button.styles";
 
-const Button = ({ variant, focus, color, disableShadow }) => {
+const Button = ({ variant, focus, color, disableShadow, disabled }) => {
   const [type, setType] = useState("Default");
-  const [themeColor, setThemeColor] = useState("Default");
+  const [disable, setDisable] = useState(null);
 
   useEffect(() => {
     if (variant) {
@@ -16,10 +16,19 @@ const Button = ({ variant, focus, color, disableShadow }) => {
       //console.log(str2);
       setType(str2);
     }
-  }, [variant, color]);
+
+    if (disabled) {
+      setDisable("Disabled");
+    }
+  }, [variant, color, disabled]);
 
   return (
-    <Wrapper focus={focus} variant={type} disableShadow={disableShadow}>
+    <Wrapper
+      focus={focus}
+      variant={type}
+      disableShadow={disableShadow}
+      disabled={disable}
+    >
       Default
     </Wrapper>
   );
