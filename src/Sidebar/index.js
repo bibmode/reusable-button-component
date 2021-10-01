@@ -6,6 +6,10 @@ const Sidebar = () => {
       <h2>
         <span>Dev</span>challenges.io
       </h2>
+      <button>
+        <span className="material-icons">menu</span>
+      </button>
+
       <List>
         <li>Colors</li>
         <li>Typography</li>

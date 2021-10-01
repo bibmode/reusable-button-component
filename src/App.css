@@ -34,9 +34,16 @@
   display: flex;
   justify-content: flex-start;
   box-sizing: border-box;
+
   width: 100vw;
   overflow-x: hidden;
   flex: 0;
+}
+
+@media only screen and (max-width: 34em) {
+  .App {
+    flex-direction: column;
+  }
 }
 
 .App > * {

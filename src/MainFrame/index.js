@@ -61,11 +61,11 @@ const MainFrame = () => {
       <Buttons>
         <ButtonContainer>
           <h3>{"<Button startIcon=”local_grocery_store” />"}</h3>
-          <Button color="primary" startIcon="local_grocery_store" />
+          <Button color="primary" startIcon="add_shopping_cart" />
         </ButtonContainer>
         <ButtonContainer>
           <h3>{"<Button endIcon=”local_grocery_store” />"}</h3>
-          <Button color="primary" endIcon="local_grocery_store" />
+          <Button color="primary" endIcon="add_shopping_cart" />
         </ButtonContainer>
       </Buttons>
 

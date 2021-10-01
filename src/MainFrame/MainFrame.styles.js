@@ -25,6 +25,11 @@ export const Wrapper = styled.div`
       color: inherit;
     }
   }
+
+  @media only screen and (max-width: 34em) {
+    padding-left: 3.5rem;
+    width: 100%;
+  }
 `;
 
 export const Buttons = styled.div`
@@ -33,6 +38,10 @@ export const Buttons = styled.div`
 
   @media only screen and (max-width: 74em) {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  @media only screen and (max-width: 34em) {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
   /* @media only screen and (max-width: ) */
@@ -46,6 +55,10 @@ export const ButtonsThreeCols = styled.div`
 
   @media only screen and (max-width: 74em) {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  @media only screen and (max-width: 34em) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 `;
 
@@ -72,6 +85,10 @@ export const ButtonContainer = styled.div`
 
   .hoverText {
     color: var(--textLight);
+  }
+
+  @media only screen and (max-width: 34em) {
+    margin: 2.8rem 3rem 0 0;
   }
 `;
 
