@@ -10,11 +10,8 @@ const Sidebar = () => {
   };
 
   useEffect(() => {
-    if (!toggle) {
-      setDisplay("block");
-    } else {
-      setDisplay("none");
-    }
+    if (!toggle) setDisplay("block");
+    else setDisplay("none");
   }, [toggle]);
 
   return (

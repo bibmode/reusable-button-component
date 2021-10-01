@@ -44,14 +44,8 @@ export const Wrapper = styled.div`
 `;
 
 export const List = styled.ul`
-  /* .hideSidebar {
-    display: none;
-    height: 0;
-  } */
-
   margin-top: 7rem;
   display: ${(props) => `${props.display}`};
-  animation: all 0.3s ease;
   height: fit-content;
 
   list-style: none;
