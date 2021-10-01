@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  box-sizing: border-box;
   background-color: #ffffff;
+  width: 70rem;
   min-height: 100vh;
-  height: 100%;
-  padding: 5.3rem 0 2.4rem 8.3rem;
+  padding: 5.3rem 3rem 2.4rem 8.3rem;
   text-align: left;
   flex: 1;
   color: #4f4f4f;
@@ -29,21 +30,37 @@ export const Wrapper = styled.div`
 export const Buttons = styled.div`
   display: grid;
   grid-template-columns: repeat(2, max-content);
+
+  @media only screen and (max-width: 74em) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  /* @media only screen and (max-width: ) */
 `;
 
 export const ButtonsThreeCols = styled.div`
   display: grid;
   grid-template-columns: repeat(3, max-content);
+
   align-items: center;
+
+  @media only screen and (max-width: 74em) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 `;
 
 export const ButtonsFourCols = styled.div`
   display: grid;
   grid-template-columns: repeat(4, max-content);
+
+  @media only screen and (max-width: 88em) {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 `;
 
 export const ButtonContainer = styled.div`
   margin: 2.8rem 6.8rem 0 0;
+  width: fit-content;
   color: var(--text);
 
   h3 {

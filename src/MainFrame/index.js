@@ -35,6 +35,7 @@ const MainFrame = () => {
           <h3>{"<Button variant=”text” />"}</h3>
           <Button variant="text" disableShadow />
         </ButtonContainer>
+
         <ButtonContainer>
           <h3 className="hoverText">&:hover, &:focus</h3>
           <Button variant="text" focus={true} disableShadow />
@@ -133,7 +134,11 @@ const MainFrame = () => {
       </LinkContainer>
       <h4>
         created by{" "}
-        <a href="https://devchallenges.io/portfolio/bibmode" target="_blank">
+        <a
+          href="https://devchallenges.io/portfolio/bibmode"
+          target="_blank"
+          rel="noreferrer"
+        >
           Genevieve Navales
         </a>{" "}
         - devChallenges.io

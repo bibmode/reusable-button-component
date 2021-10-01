@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   background-color: #fafbfd;
-  width: min(237px, 20%);
+  width: 23.7rem;
   padding: 4.7rem 5.6rem;
   text-align: left;
+  flex: 0 0 200px;
 
   h2 {
     font-size: 1.3rem;

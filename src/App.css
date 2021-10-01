@@ -1,6 +1,6 @@
 :root {
   --bgDefault: rgb(224, 224, 224);
-  --bgDefaultFocus: rgb(174, 174, 174);
+  --bgDefaultFocus: rgb(173, 173, 173);
   --bgOutline: transparent;
   --bgOutlineFocus: rgba(41, 98, 255, 0.102);
   --bgText: transparent;
@@ -16,7 +16,7 @@
   --textPrimary: rgb(255, 255, 255);
   --textSecondary: rgb(255, 255, 255);
   --textDanger: rgb(255, 255, 255);
-  --textLight: hsl(0, 0%, 51%);
+  --textLight: rgb(130, 130, 130);
   --text: rgb(61, 90, 254);
   --textDefault: rgb(63, 63, 63);
   --textDisabled: rgb(158, 158, 158);
@@ -32,7 +32,11 @@
 .App {
   text-align: center;
   display: flex;
+  justify-content: flex-start;
   box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+  flex: 0;
 }
 
 .App > * {
