@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   background-color: #ffffff;
-  height: 100vh;
-  padding: 5.3rem 8.3rem 0 8.3rem;
+  min-height: 100vh;
+  height: 100%;
+  padding: 5.3rem 0 2.4rem 8.3rem;
   text-align: left;
   flex: 1;
   color: #4f4f4f;
@@ -11,6 +12,17 @@ export const Wrapper = styled.div`
   h1 {
     font-size: 2.4rem;
     font-weight: 500;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #a9a9a9;
+
+    a {
+      font-weight: 700;
+      color: inherit;
+    }
   }
 `;
 
@@ -22,6 +34,12 @@ export const Buttons = styled.div`
 export const ButtonsThreeCols = styled.div`
   display: grid;
   grid-template-columns: repeat(3, max-content);
+  align-items: center;
+`;
+
+export const ButtonsFourCols = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
 `;
 
 export const ButtonContainer = styled.div`
@@ -36,6 +54,18 @@ export const ButtonContainer = styled.div`
   }
 
   .hoverText {
+    color: var(--textLight);
+  }
+`;
+
+export const LinkContainer = styled.div`
+  margin-top: 5.2rem;
+  margin-bottom: 3.4rem;
+
+  a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
     color: var(--textLight);
   }
 `;

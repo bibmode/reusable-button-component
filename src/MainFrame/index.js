@@ -3,7 +3,9 @@ import {
   ButtonContainer,
   Buttons,
   ButtonsThreeCols,
+  ButtonsFourCols,
   Wrapper,
+  LinkContainer,
 } from "./MainFrame.styles";
 
 const MainFrame = () => {
@@ -80,6 +82,62 @@ const MainFrame = () => {
           <Button variant="primary" size="lg" />
         </ButtonContainer>
       </ButtonsThreeCols>
+
+      <ButtonsFourCols>
+        <ButtonContainer>
+          <h3>{"<Button color=”default” />"}</h3>
+          <Button color="default" />
+        </ButtonContainer>
+        <ButtonContainer>
+          <h3>{"<Button color=”primary” />"}</h3>
+          <Button color="primary" />
+        </ButtonContainer>
+        <ButtonContainer>
+          <h3>{"<Button color=”secondary” />"}</h3>
+          <Button color="secondary" />
+        </ButtonContainer>
+        <ButtonContainer>
+          <h3>{"<Button color=”danger” />"}</h3>
+          <Button color="danger" />
+        </ButtonContainer>
+      </ButtonsFourCols>
+
+      <ButtonsFourCols>
+        <ButtonContainer>
+          <h3>{"<Button color=”default” />"}</h3>
+          <Button color="default" focus={true} />
+        </ButtonContainer>
+        <ButtonContainer>
+          <h3>{"<Button color=”primary” />"}</h3>
+          <Button color="primary" focus={true} />
+        </ButtonContainer>
+        <ButtonContainer>
+          <h3>{"<Button color=”secondary” />"}</h3>
+          <Button color="secondary" focus={true} />
+        </ButtonContainer>
+        <ButtonContainer>
+          <h3>{"<Button color=”danger” />"}</h3>
+          <Button color="danger" focus={true} />
+        </ButtonContainer>
+      </ButtonsFourCols>
+
+      {/* LINK */}
+      <LinkContainer>
+        <a
+          href="https://material.io/resources/icons/?style=round"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Icons: https://material.io/resources/icons/?style=round
+        </a>
+      </LinkContainer>
+      <h4>
+        created by{" "}
+        <a href="https://devchallenges.io/portfolio/bibmode" target="_blank">
+          Genevieve Navales
+        </a>{" "}
+        - devChallenges.io
+      </h4>
     </Wrapper>
   );
 };

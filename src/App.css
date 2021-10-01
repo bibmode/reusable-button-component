@@ -7,9 +7,15 @@
   --bgTextFocus: rgba(41, 98, 255, 0.102);
   --bgPrimary: rgb(41, 98, 255);
   --bgPrimaryFocus: rgb(0, 57, 203);
+  --bgSecondary: #455a64;
+  --bgSecondaryFocus: #1c313a;
+  --bgDanger: #d32f2f;
+  --bgDangerFocus: #9a0007;
 
   --textDark: rgb(51, 51, 51);
   --textPrimary: rgb(255, 255, 255);
+  --textSecondary: rgb(255, 255, 255);
+  --textDanger: rgb(255, 255, 255);
   --textLight: hsl(0, 0%, 51%);
   --text: rgb(61, 90, 254);
   --textDefault: rgb(63, 63, 63);
