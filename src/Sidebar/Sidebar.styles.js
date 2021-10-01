@@ -44,26 +44,34 @@ export const Wrapper = styled.div`
 `;
 
 export const List = styled.ul`
+  /* .hideSidebar {
+    display: none;
+    height: 0;
+  } */
+
+  margin-top: 7rem;
+  display: ${(props) => `${props.display}`};
+  animation: all 0.3s ease;
+  height: fit-content;
+
   list-style: none;
   font-size: 1.4rem;
   font-weight: 500;
   color: #9e9e9e;
-  margin-top: 12.2rem;
+
+  @media only screen and (min-width: 34em) {
+    display: block;
+  }
 
   li {
     :not(:last-child) {
       margin-bottom: 2.5rem;
+      flex: 1 0 auto;
     }
 
     :nth-child(5) {
       font-weight: 700;
       color: #090f31;
     }
-  }
-
-  @media only screen and (max-width: 34em) {
-    margin-top: 5rem;
-    display: none;
-    height: 0;
   }
 `;

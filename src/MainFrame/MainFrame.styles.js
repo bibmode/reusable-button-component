@@ -78,9 +78,15 @@ export const ButtonContainer = styled.div`
 
   h3 {
     font-size: 1.2rem;
+    width: 100%;
     font-weight: 400;
     margin-bottom: 1.2rem;
+    word-wrap: break-word;
     color: var(--textDark);
+
+    @media only screen and (max-width: 34em) {
+      width: 75%;
+    }
   }
 
   .hoverText {
